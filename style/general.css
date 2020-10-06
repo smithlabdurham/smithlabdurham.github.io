@@ -1,0 +1,359 @@
+@charset "UTF-8";
+
+background {color: #fff;}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	color: #392a31;  
+  line-height: 1.48em;    /* 1.125 * 100 = 1.48 * 76% */
+  background-color: #392a31;  
+	font-weight:normal;
+	color: #333;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.25em;
+	margin-bottom: 0.5em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.25em;
+	font-weight: bold;
+  margin: 2em 0 1em;
+}
+
+h3 {
+	font-size: 1em; 
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+td ul, td ol, td h3, td h4 {
+	font-size: 100%;
+}
+td p, td li {
+	font-size: 100%em;
+}
+p, ul, ol {margin-bottom:0.5em;}  
+
+td h3 {
+	font-size: 1.2em; font-weight: bold;
+}
+
+.footer {margin: 0.5em 0 0 0; padding: 0.5em 0 0 0;}
+
+.footer img {float:right; }
+
+/* =LINKS
+-------------------------------------------------------------- */
+
+a[href]:active {text-decoration: none; }
+	
+a[id]:hover {text-decoration:none;}
+
+a img {border:none;}
+
+
+/*---------------------*/
+/*        Links        */
+/*---------------------*/
+
+#content a,
+#content a:link {
+	color:#479;
+	text-decoration:none;
+	}
+
+#content a:visited {
+	color:#579;
+	}
+
+#content a:hover,
+#content a:active {
+	color:#678;
+	text-decoration:none;
+	background-color:#e3e3e3;
+	} 
+
+
+/* =LISTS
+-------------------------------------------------------------- */
+
+ul {
+	list-style-type: disc;
+}
+
+ul ul, ol ol  {
+	font-size: 0.9em;
+	margin-top: 0.5em;
+	margin-left: 1.25em;
+}
+
+ul ul ul, ol ol ol, ul li p, ol li p, ul li ul, ul li ol, ol li ul, ol li ol {
+	font-size: 100%;
+}
+
+div.reference {
+  padding-left: 1.4em;
+  padding-right: 0.7em;
+  text-indent: -1.4em;
+  margin: 1.4em 0;
+  clear: both;
+}
+div.lowlight {
+  opacity: 0.75;
+}
+
+.altmetric-embed {
+  float: right;
+  margin-right: -0.7em;
+  opacity: 0.20;
+  height: 4em;
+  padding-bottom: 2.6em;
+}
+.altmetric-embed:hover {
+  opacity: 0.90;
+}
+#content div.altmetric-embed a:hover {
+  background-color: transparent;
+}
+
+span.__dimensions_badge_embed__, 
+span.__dimensions_badge_embed__ a, 
+span.__dimensions_badge_embed__ a:hover{
+  opacity: 0.75;
+  float: right;
+  margin-right: -0.7em
+}
+
+ol {
+	list-style-type: decimal;
+	margin-left: 2.4em;
+}
+
+dl {	margin-left: 2em;}
+
+dl dl { font-size: 0.75em; }
+
+dt {	font-weight: bold;}
+
+dd {	margin: 0 0 0.5em 0 ;}
+
+img.favicon {
+  height: 16px;
+  width: 16px;
+  padding: 2px 4px;
+  margin-top: 4px;
+}
+
+/* =OTHER TEXT ELEMENTS
+-------------------------------------------------------------- */
+
+sup {
+	font-size: 0.85em;
+	position: relative;
+	bottom: 0.5em;
+}
+
+sub {
+	font-size: 0.85em;
+	position: relative;
+	top: 0.5em;
+}
+
+blockquote { 
+	background: #fff;
+	padding: 0.5em 1em 0 1em;
+	font-size: 1em;
+	position: relative;
+}
+
+blockquote p {
+	margin-left: 2.5em;
+	margin-right: 2em;
+}
+
+strong {	font-weight: bold;}
+
+em {	font-style: italic;}
+
+pre {
+	background: #fff;
+	padding: 0.5em 1em 0 1em;
+	font-family: Monaco, monospace;
+	overflow: auto;
+}
+
+tt, code {
+	font-family: 'Andale Mono', 'courier new', monospace;
+	font-size: 1em;
+	line-height: 1.125em;
+}
+
+/* ====== */
+/* LAYOUT */
+/* ====== */
+
+#wrapper {
+  width:84%;
+  margin: 0 8%;
+	max-width:960px;
+	text-align:left;
+  position:relative;
+  background-color: #f4f4f4;
+  padding: 24px;
+  box-shadow: 0 0 185px #201718;
+}
+
+h1.banner {
+  font-weight: bold;
+  padding: 18px 18px 18px 2em;
+  margin: 0 0 0 -2em;
+  height: 25px;
+  background-color: #a3b6cf;
+  border: 1px solid;
+  box-shadow: 0.5em 0.5em 1em -0.5em #a3b6cf, 0.5em -0.5em 1em -0.5em #a3b6cf;
+}
+
+#banner-image {
+  margin: 0 10%;
+  border: 3px double;
+  width: 250px;
+  max-width: 80%;
+}
+
+.field_photo {
+  width:50%; 
+  border: 1px black solid; 
+  float:right; 
+  margin: 0.5em 0 0.5em 0.5em;
+}
+
+.other_content {
+  padding-top: 1em;
+  margin-bottom: 3em;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+}
+
+#column_left {
+	width: 62%;
+	float: left;
+}
+
+#column_right {
+	width: 35%;
+	float: right;
+}
+
+.tabset {
+  width: 100%;
+  margin-top: 2em;
+	line-height: 1.25em;
+	font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-bottom: solid 3px #a3b6cf;
+  display: table;
+}
+
+.tab {
+  background-color: #a3b6cf;
+  display: table-cell;
+  border: none;
+  border-radius: 9px 35px 0 0;
+  padding: 0.4em 1.5em 0.4em 0.8em;
+}
+
+.other_tab {
+  background-color: #dddde5;
+}
+
+.article {
+  text-decoration: none;
+  color: #433;
+}
+
+.bull:before, .bull:after {
+  content: '.'
+}
+.arrub:after {
+  content: '@'
+}
+
+.small_text {
+  font-size: smaller;
+}
+
+hr {
+  background-color: black;
+  margin-top: 2em;
+}
+
+.research_note {
+  clear: both;
+  border-bottom: 3px double #392a31;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+.research_note p {
+  font-size: smaller;
+}
+
+.research_note p.reference {
+  font-size: 60%;
+  line-height: 1.48em;
+}
+
+.research_fig {
+  clear: both;
+  float: right;
+  width: 150px;
+  font-size: 9px;
+  text-align: right;
+  margin: 1em;
+}
+
+.research_pic {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+
+p.last_updated {font-size:small; color:#999999;}
+
+br.clear {clear:both;}
+
+/* Lists within lists shouldn't have a font-size greater than 1,
+     since they actually inherit the font-size of their parent, 
+     and so 1.4 x 1.4 is bigger! */
+p p,	 
+ul ul,
+ul ul ul,
+ul ol,
+ol ul,
+ul ol ul,
+ul ol ol,
+ol ul ul,
+ol ul ol,
+td ul {font-size:1em;}
+/*standard table */
+
+table th, table td {padding: 0.3em 0.4em 0.2em 0.4em;}
+
+table th {font-weight:bold;}
