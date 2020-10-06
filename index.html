@@ -5,7 +5,6 @@
 <link rel="stylesheet" href="style/general.css" type="text/css" media="all" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="style/switch_tabs.js"></script>
-<script async type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 <title>Smith Lab, Durham University</title>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -18,8 +17,8 @@
 </head>
 <body>
 <div id="wrapper">
- <div id="content">
-    <div id="column_left">    
+  <div id="content">
+    <header>
       <h1 class="banner">Martin Smith</h1>
       <h2>Laboratory for invertebrate palaeontology and phylogenetics</h2>
       <p>
@@ -30,48 +29,51 @@
       deposits and their microscopic counterparts, the 
       <a title='Wikipedia' href='http://en.wikipedia.org/wiki/Small_Carbonaceous_Fossil'>Small Carbonaceous Fossils</a>.
       </p>
-      <div id="content_tabs" class="tabset">
+    </header>
+    <nav id="content_tabs" class="tabset">
       <span id="research_tab"  class="tab">Research</span>
       <span id="fieldwork_tab" class="tab other_tab">Phd/MSc projects</span>
-      <span id="teaching_tab"  class="tab other_tab">Teaching</span>
-      <span id="biography_tab" class="tab other_tab">Biography</span>
-      </div>
+      <!--span id="teaching_tab"  class="tab other_tab">Teaching</span-->
+      <span id="biography_tab" class="tab other_tab">The team</span>
+    </nav>
+    <div id="column_left">    
       <div id="research_content">
-        <!--div class='research_note'>
-          <h3>How the velvet worm walks</h3>
-          <div class='research_fig'>
-            <img class='research_pic' src="img/Tritonychus.png"/>
-            Zhang X.-G.
-          </div>
-          <p>It may look like a tattered surgical stocking on legs, but this millimetre-long fossil is one of the best preserved animal fossils from the Cambrian period, 500 million years ago.  With no mineralized hard parts, such worms normally rot and decay long before the processes of fossilization could get to work &ndash;          but this one-off preserves every wart and wrinkle of the skin, along with its fibrous muscles.  The ancient fossil <a href="https://theconversation.com/page-66170"
-            title="World&rsquo;s oldest muscle-fibre fossil reveals the origin of legs @ The Conversation">provides a rare glimpse</a> on a significant evolutionary transition &ndash; the origin of legs.
-        </p>
-         <p class='reference'>
-          Zhang, X.-G., Smith, M.R., Yang, J. & Hou, J.-B. (2016).
-          "<a href="http://dx.doi.org/10.1098/rsbl.2016.0492" title="View at publisher">Onychophoran-like musculature in a phosphatized Cambrian lobopodian</a>". <i>Biology Letters</i> <b>12</b>&nbsp;(9): 20160492</p>
-        </div-->
         <div class='research_note'>
          <h3>Timing the pace of the Cambrian Explosion</h3>
-         <p>530 million years ago, the fossil record documents a step change in the complexity and abundance of life on
-Earth. Our understanding of this ‘Cambrian Explosion’ is fundamentally incomplete. Was it one event or multiple
-bursts? How did diversification relate to contemporary environmental changes? Can it be explained by presentday evolutionary processes?
-We will develop mathematical techniques that integrate geological observations from across the globe,
-generating a single record of biological and environmental changes through time. This will establish the rate at
-which animal biodiversity arose, and the triggers and consequences of this riot of evolution.</p>
-<p>To accurately reconstruct the evolutionary events of the Cambrian radiation, we will map the global record of
-palaeontological, sedimentological and geochemical change onto a common timeline, accounting for
-preservational biases.
-The first challenge is to fit independent rock deposits into a single timeline, which currently relies on subjective
-decision-making. We will construct an objective statistical model for precise stratigraphic correlation,
-adapting established archaeological techniques to establish the relative ages of rock sequences in the
-Cambrian and beyond.
-Secondly, a novel model of morphological evolution will link fossil finds of known ages to points in the tree of
-life, providing dates and rates of branching points and morphological innovation.
-Finally, applying our models to a detailed dataset of a major animal lineage will link evolutionary progress to
-environmental change. Testing the influence of different factors interpreted as contributors to, or results of,
-elevated evolutionary rates will establish the feedbacks and interactions between the planet and early
-animal life</p>
+         <div class='research_fig' style="margin: 1em 1em 0;">
+            <img class='research_pic' src="img/Hyolith_reconstruction.jpg"/>
+         </div>
+         <p>
+         530 million years ago, the fossil record documents a step change in the 
+         complexity and abundance of life on Earth. 
+         Our understanding of this &lsquo;Cambrian Explosion&rsquo; is fundamentally incomplete. Was it one event or multiple
+         bursts? How did diversification relate to contemporary environmental changes?
+         Can it be explained by presentday evolutionary processes?
+         </p><p>
+         The Leverhulme Trust have awarded us funding to develop mathematical techniques
+         that integrate geological observations from across the globe,
+         generating a single record of biological and environmental changes through time.
+         This will establish the rate at which animal biodiversity arose, and the triggers
+         and consequences of this riot of evolution.
+         </p><p>
+         To accurately reconstruct the evolutionary events of the Cambrian radiation,
+         we will map the global record of palaeontological, sedimentological and
+         geochemical change onto a common timeline, accounting for preservational biases.
+         The first challenge is to fit independent rock deposits into a single timeline,
+         which currently relies on subjective decision-making.
+         We will construct an objective statistical model for precise stratigraphic
+         correlation, adapting established archaeological techniques to establish the 
+         relative ages of rock sequences in the Cambrian and beyond.
+         Secondly, a novel model of morphological evolution will link fossil finds of 
+         known ages to points in the tree of life, providing dates and rates of branching
+         points and morphological innovation.
+         Finally, applying our models to a detailed dataset of a major animal lineage will
+         link evolutionary progress to environmental change. Testing the influence of 
+         different factors interpreted as contributors to, or results of, elevated
+         evolutionary rates will establish the feedbacks and interactions between the
+         planet and early animal life.</p>
         </div>
+        
         <div class='research_note'>
           <h3>Solving the riddle of the hyoliths</h3>
           <div class='research_fig' style="margin: 1em 1em 0;">
@@ -145,10 +147,6 @@ animal life</p>
           It seems that quirky <i>Hallucigenia</i> was no recluse: along with its relatives, 
           it formed a cosmopolitan community that spanned the Cambrian seas.</p>
           <iframe style="width:100%; max-width:560px; height:315px" src="https://www.youtube.com/embed/9-Z9Ssgb0Kg" frameborder="0" allowfullscreen></iframe>
-          <!--div class='research_fig' style="margin: 1em 1em 0;">
-            <img class='research_pic' src="img/Hallucigenia_reconstruction_305.png" />
-            Danielle Dufault
-          </div-->
           <p>When <i>Hallucigenia</i> was first described in the 1970s, the spines along its back were mistaken for legs,
           and its head was mistaken for its tail. Now, state-of-the-art electron microscopes have yielded new details from
           the spines, claws and head of <i>Hallucigenia</i>, exposing its
@@ -157,7 +155,7 @@ animal life</p>
             in life&rsquo;s evolutionary tree</a>, and how it helps us to 
           <a href="https://theconversation.com/page-30438" 
           title="Ancient mini-monster head mystery solved &ndash; here's how we did it @ The Conversation">reconstruct 
-          the common ancestor of all moulting animals</a>.
+          the common ancestor of all moulting animals</a>.</p>
           <p class='reference'>Smith, M.R. (2017). "<a href="http://www.palaeontologyonline.com/articles/2017/fossil_focus_hallucigenia" title="Read article online">Fossil Focus: <i>Hallucigenia</i> and the origin of animal body plans</a>". <i>Palaeontology Online</i> <b>7</b> (5): 1&ndash;9</p>
           <p class='reference'>Smith, M.R. & Caron, J.-B. (2015). "<a href="http://rdcu.be/dcCi" title="View article free on ReadCube"><i>Hallucigenia</i>&rsquo;s head and the pharyngeal armature of early ecdysozoans</a>". <i>Nature</i> <b>523</b> (7558): 75&ndash;78.</p>
           <p class='reference'>Smith, M.R. & Ortega Hern&aacute;ndez, J. (2014). "<a class='article' href='http://rdcu.be/bKoD' title='View article free on Readcube'><i>Hallucigenia</i>&rsquo;s onychophoran-like claws and the case for Tactopoda</a>". <i>Nature</i> <b>514</b> (5722): 363&ndash;366.</p>
@@ -220,27 +218,6 @@ animal life</p>
           <p class=reference>Smith, M.R. &amp; Caron, J.-B. (2010). "<a href='http://rdcu.be/bKoH' class='article' title='View free at ReadCube' target='_blank'>Primitive soft-bodied cephalopods from the Cambrian</a>", <i>Nature</i> <b>465</b> (7297): 469&ndash;472.</p>
         </div>
         
-        <!--div class='research_note'>
-          <h3>The Burgess Shale</h3>
-          <div class='research_fig'>
-            <img class='research_pic' src="img/Burgess_camp.JPG" />
-            M.R. Smith
-          </div>
-          <p>
-          The Burgess Shale is one of the most exciting fossil deposits in the world.  Unlike 
-          normal fossils, which only preserve shells, skeletons, and other mineralized parts,
-          this site preserves all the squishy bits: gills, fins, tentacles &ndash; even eyes.</p>
-          <p>
-          This remarkable site was discovered in 1909, and to mark its centenary I helped to 
-          organize an international conference on the Cambrian Explosion, which took place 
-          in Banff, Alberta.  I also wrote and edited content for the 
-          Virtual Museum of Canada's <a href="http://burgess-shale.rom.on.ca/en/"
-           target="_blank">online exhibit</a>  on the Burgess Shale.
-          </p>
-          <p class='reference'>Smith, M.R., O'Brien, L.J. & Caron, J-B. (2009). "<a target='_blank' class='article' href="ICCE Abstract volume.pdf"
-           title="International Conference on the Cambrian Explosion (Banff) - Walcott 2009 abstract booklet">International Conference on the Cambrian Explosion &ndash; Abstract Volume</a>". ISBN 978-0-9812885-1-2.</p>
-        </div-->
-        
         <div class='research_note'>
           <h3>The 'soggy seaweed' <i>Nematothallus</i></h3>
           <div class='research_fig' style="margin: -1em 1em;">
@@ -271,21 +248,172 @@ animal life</p>
           Smith, M.R. & Butterfield, N.J. (2013). "<a href='http://onlinelibrary.wiley.com/doi/10.1111/j.1475-4983.2012.01203.x/abstract' class='article' title='View at publisher' target='_blank'>A new view on <i>Nematothallus</i>: coralline red algae from the Silurian of Gotland</a>". <i>Palaeontology</i> <b>56</b> (2): 297-321.
           </p>
         </div>
+      
       </div> <!-- end of research content-->  
+      
       <div id="biography_content" class="other_content">
-        <p>After obtaining an undergraduate degree (BA and MSc) in Natural Sciences from the University of Cambridge, 
-        specializing in <a href="http://www.esc.cam.ac.uk/" target="_blank">Earth Sciences</a> and undertaking a 
-        Masters' research project in Palaeobotany with <a href="http://www.esc.cam.ac.uk/directory/nicholas-butterfield" 
-        target="_blank">Nick Butterfield</a>.</p>
-        <p>I then proceeded to a PhD at the University of Toronto 
-        under <a href="https://www.rom.on.ca/en/collections-research/rom-staff/jean-bernard-caron" target="_blank">Jean-Bernard 
-        Caron</a>.  Based at the <a href="https://www.rom.on.ca/" target="_blank">Royal Ontario 
-        Museum</a>, this was my first encounter with the 
-        <a href="http://burgess-shale.rom.on.ca/en/index.php" target="_blank">Burgess Shale</a>
-        fossils that now form a central part of my research portfolio. I subsequently returned to Cambridge
-        to take up a Junior Research Fellowship at <a href="http://www.clare.cam.ac.uk/"
-        target="_blank">Clare College</a>, before moving in 2015 to Durham University, 
-        where I am an Assistant Professor (i.e. Lecturer) in Palaeontology.</p>
+        <div id="MartinSmith" class="person">
+         <div class="vcard right">
+            <img class="mugshot photo" src="img/MartinSmith.jpg" alt="Martin R. Smith portrait" />
+            <div class="widgets">
+              <a href='https://github.com/ms609' title="Martin Smith - GitHub"><img class="favicon" src="https://github.githubassets.com/favicon.ico" /></a>
+              <a href='//publons.com/author/1313384' title="Martin Smith - publons"><img class="favicon" src="https://publons.com/static/images/favicons/favicon.ico" /></a>
+              <a href='//scholar.google.co.uk/citations?user=a4O3ze0AAAAJ' title="Martin Smith - Google Scholar"><img class="favicon" src="http://scholar.google.com/favicon.ico" /></a>
+              <a href='//www.researchgate.net/profile/Martin_Smith9' title="Martin Smith - Researchgate"><img class="favicon" src="https://researchgate.net/favicon.ico" /></a>
+              <a href='//orcid.org/0000-0001-5660-1727' title="Martin Smith - ORCiD"><img class="favicon" src="https://orcid.org/favicon.ico" /></a>
+            </div>
+            <div id="profile_meta" class="small_text">
+              <p>
+                <span class="n display-name">
+                  <span class="honorific-prefix">Dr.</span>
+                  <span class="fn">
+                    <span class="given-name">Martin</span> R. <span class="family-name">Smith</span>
+                  </span>
+                  <span class="honorific-suffix">SFHEA</span>
+                </span><br />
+                <span class="title">Assistant Professor (Palaeontology)</span><br />
+                <span class="adr"><span class="type" style="display:none">Work</span>
+                <span class="street-address">Department of Earth Sciences</span><br />
+                <span class="locality">University of Durham</span>, <span class="region" style="display: none">Durham</span>
+                <span class="postal-code">DH1 3LE</span><br/>
+                Room ES313</span>
+              </p>
+              <p>
+                <span class="tel" type="intl"><span class="value">+44</span> (0) <span class="value">191 334 2320</span></span><br />
+                <span class="arrub">martin.smith</span>durham<span class="bull">ac</span>uk<br />
+              </p>
+              <a href="https://twitter.com/PalaeoSmith" class="twitter-follow-button favicon" data-show-count="false">Follow @PalaeoSmith</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+          </div>
+          <div class="left">
+            <h2>Martin R. Smith</h2>
+            <p>
+            I am interested in the origins of complex animal life, as revealed by the 
+            fossil record.  Teasing evolutionary information from ancient rocks requires
+            sophisticated mathematical techniques; I develop bioinformatic and 
+            phylogenetic methods to better understand the patterns and processes 
+            documented by the palaeontological record.
+            </p>
+            <p>After obtaining an undergraduate degree (BA and MSc) in Natural Sciences from the University of Cambridge, 
+            specializing in <a href="http://www.esc.cam.ac.uk/" target="_blank">Earth Sciences</a> and undertaking a 
+            Masters' research project in Palaeobotany with <a href="http://www.esc.cam.ac.uk/directory/nicholas-butterfield" 
+            target="_blank">Nick Butterfield</a>, I proceeded to a PhD at the University of Toronto 
+            under <a href="https://www.rom.on.ca/en/collections-research/rom-staff/jean-bernard-caron" target="_blank">Jean-Bernard 
+            Caron</a>.  Based at the <a href="https://www.rom.on.ca/" target="_blank">Royal Ontario 
+            Museum</a>, this was my first encounter with the 
+            <a href="http://burgess-shale.rom.on.ca/en/index.php" target="_blank">Burgess Shale</a>
+            fossils that now form a central part of my research portfolio. I subsequently returned to Cambridge
+            to take up a Junior Research Fellowship at <a href="http://www.clare.cam.ac.uk/"
+            target="_blank">Clare College</a>, before moving in 2015 to Durham University, 
+            where I am an Assistant Professor (i.e. Lecturer) in Palaeontology.</p>
+          </div>
+        </div>
+        
+        <div id="MatthiasSinnesael" class="person">
+          <div class="vcard right">
+              <img class="mugshot photo" src="img/MatthiasSinnesael.jpg" alt="Matthias Sinnesael portrait" />
+              <div class="widgets">
+                <a href='//scholar.google.co.uk/citations?user=PUj6faoAAAAJ' title="Matthias Sinnesael - Google Scholar"><img class="favicon" src="http://scholar.google.com/favicon.ico" /></a>
+                <a href='//www.researchgate.net/profile/Matthias_Sinnesael' title="Matthias Sinnesael - Researchgate"><img class="favicon" src="https://researchgate.net/favicon.ico" /></a>
+                <a href='//orcid.org/0000-0003-0354-8250' title="Matthias Sinnesael - ORCiD"><img class="favicon" src="https://orcid.org/favicon.ico" /></a>
+              </div>
+              <div id="profile_meta" class="small_text">
+                <p>
+                  <span class="n display-name">
+                    <span class="honorific-prefix">Dr.</span>
+                    <span class="fn">
+                      <span class="given-name">Matthias</span> <span class="family-name">Sinnesael</span>
+                    </span>
+                  </span><br />
+                  <span class="title">Postdoctoral research associate</span><br />
+                  <span class="tel" type="intl"><span class="value">+44</span> (0) <span class="value">191 334 2347</span></span><br />
+                  <span class="arrub">matthias.sinnesael</span>durham<span class="bull">ac</span>uk<br />
+                </p>
+              </div>
+            </div>
+          <div class="left">
+            <h2>Matthias Sinnesael</h2>
+            <p>
+            To reconstruct past interactions between life and the planet, it is necessary to construct a detailed timeline that links evolutionary events with environmental change. This requires the correlation of geochemical and sedimentary observations with an incomplete fossil record.
+            </p><p>
+            Matthias is PDRA on a Leverhulme-funded project that will construct Bayesian models of stratigraphy and morphological evolution, which will allow diverse sources of geological data to be integrated into a single timeline, allowing tests of causality and correlation.
+            These models will be applied to the Cambrian Explosion, establishing the character, causes and consequences of this profound evolutionary diversification—thus illuminating the origins of diverse animal-dominated ecosystems and their impact on Earth processes.
+            </p>
+            <p>Matthias has a PhD on Ordovician cyclostratigraphy, has contributed to cyclostratigraphic methodology, studied K-Pg boundary sections, Devonian cyclostratigraphy, and carbonate geochemistry. Research interests include integrated stratigraphy, paleoclimatology and cyclicity.
+            </p>
+          </div>
+        </div>
+        
+        <div id="AlexButryn" class="person">
+          <div class="vcard right">
+              <!--img class="mugshot photo" src="img/MatthiasSinnesael.jpg" alt="Alavya Dhungana portrait" /-->
+              <div class="widgets">
+              </div>
+              <div id="profile_meta" class="small_text">
+                <p>
+                  <span class="n display-name">
+                    <span class="honorific-prefix">Mr.</span>
+                    <span class="fn">
+                      <span class="given-name">Alexander</span> <span class="family-name">Butryn</span>
+                    </span>
+                  </span><br />
+                  <span class="title">Postgraduate student</span><br />
+                  <!--span class="arrub">alavya.dhungana</span>durham<span class="bull">ac</span>uk<br /-->
+                </p>
+              </div>
+            </div>
+          <div class="left">
+            <h2>Alex Butryn</h2>
+            <p>
+            Alex's Leverhulme-funded PhD will develop a new morphological model suited
+            to the Bayesian inferrence of phylogeny from palaeontological datasets.
+            </p>
+          </div>
+        </div>
+      
+        <div id="AlavyaDhungana" class="person">
+          <div class="vcard right">
+              <!--img class="mugshot photo" src="img/MatthiasSinnesael.jpg" alt="Alavya Dhungana portrait" /-->
+              <div class="widgets">
+              </div>
+              <div id="profile_meta" class="small_text">
+                <p>
+                  <span class="n display-name">
+                    <span class="honorific-prefix">Mr.</span>
+                    <span class="fn">
+                      <span class="given-name">Alavya</span> <span class="family-name">Dhungana</span>
+                    </span>
+                  </span><br />
+                  <span class="title">Postgraduate student</span><br />
+                  <span class="arrub">alavya.dhungana</span>durham<span class="bull">ac</span>uk<br />
+                </p>
+              </div>
+            </div>
+          <div class="left">
+            <h2>Alavya Dhungana</h2>
+            <p>
+            Alavya has a Leverhulme-funded PhD position that will collect new 
+            palaeontological data to generate a new, annotated morphological dataset of 
+            representing the Cambrian fossil record of all Ecdysozoan phyla. 
+            Analysis by appropriate, stratigraphically constrained models will yield the 
+            first detailed, temporally calibrated view of the evolutionary origins of 
+            arthropods and related phyla during the Cambrian explosion.
+            </p>
+          </div>
+        </div>
+        <div class="person">
+          <div class="left">
+            <h2>Co-investigators</h2>
+            Our Leverhulme-funded research project exploring the pace of the Cambrian Explosion
+            is a collaborative effort with 
+            <a href="https://www.ncl.ac.uk/maths-physics/staff/profile/tomnye.html" title="Tom Nye" target="_blank">Tom Nye</a>
+            (Statistics, Newcastle) and
+            <a href="https://www.dur.ac.uk/archaeology/staff/?id=160" title="Andrew Millard" target="_blank">Andrew Millard</a>
+            (Archaeology, Durham).
+          </div>
+        </div>
+        <div style="clear: both;" />
       </div>
       <div id="fieldwork_content" class="other_content">
         <img src="img/Folded_mtn.jpg" class="field_photo">
@@ -307,7 +435,7 @@ animal life</p>
                     font-size: 9px;">Jiahe Max Luan</div>
         <p>I currently lead a second year undergraduate course in Palaeoecosystems, contribute 
         to Palaeobiology teaching at a first-year introductory level, and supervise third-
-        and fourth-year research projects.<p>
+        and fourth-year research projects.</p>
         <ul><li>Example <a href="teach/Ediacaran Ontogenies.pdf">practical exercise</a> 
         (<a href="teach/Ediacaran Ontogenies - Demonstrators.pdf">with notes</a>):
         research-led investigation of Ediacaran organisms.</li></ul>
@@ -316,41 +444,7 @@ animal life</p>
     </div>
 
     <div id="column_right">
-      <div id="contact_details" class="vcard">
-        <img class="photo" src="img/profile.jpg" alt="Profile photo" id="banner-image" />
-        <h3 class="tabset">
-          <div class="tab" style="width: 50%">
-             Contact
-          </div>
-        </h3>
-        <div id="profile_meta" class="small_text">
-          <p>
-            <span class="n display-name"><span class="honorific-prefix">Dr.</span><span class="fn">
-            <span class="given-name">Martin</span> R. <span class="family-name">Smith</span></span></span><br />
-            <span class="title">Assistant Professor (Palaeontology)</span><br />
-            <span class="adr"><span class="type" style="display:none">Work</span>
-            <span class="street-address">Department of Earth Sciences</span><br />
-            <span class=locality>University of Durham</span>, <span class="region" style="display: none">Durham</span>
-            <span class="postal-code">DH1 3LE</span><br/>
-            Room ES313</span>
-          </p>
-          <p>
-            <span class="tel" type="intl"><span class="value">+44</span> (0) <span class="value">191 334 2320</span></span><br />
-            <span class=arrub>martin.smith</span>durham<span class=bull>ac</span>uk<br />
-            
-            <a href='https://github.com/ms609' title="Martin Smith - GitHub"><img class="favicon" src="https://github.githubassets.com/favicon.ico" /></a>
-            <a href='//publons.com/author/1313384' title="Martin Smith - publons"><img class="favicon" src="https://publons.com/static/images/favicons/favicon.ico" /></a>
-            <a href='//scholar.google.co.uk/citations?user=a4O3ze0AAAAJ' title="Martin Smith - Google Scholar"><img class="favicon" src="http://scholar.google.com/favicon.ico" /></a>
-            <a href='//www.researchgate.net/profile/Martin_Smith9' title="Martin Smith - Researchgate"><img class="favicon" src="https://researchgate.net/favicon.ico" /></a>
-            <a href='//orcid.org/0000-0001-5660-1727' title="Martin Smith - ORCiD"><img class="favicon" src="https://orcid.org/favicon.ico" /></a>
-            <!--a href='//durham.academia.edu/MartinSmith' title="Martin Smith - Academia.edu"><img class="favicon" src="http://academia.edu/favicon.ico" /></a-->
-            <br />
-            <a href="https://twitter.com/PalaeoSmith" class="twitter-follow-button" data-show-count="false">Follow @PalaeoSmith</a>
-            
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-          </p>
-        </div>
-      </div>
+     
       <!--  end of #sidebar_container -->    
       
       <div id="publications">
@@ -510,9 +604,8 @@ animal life</p>
       <a href="https://www.dur.ac.uk/"><img style='padding: 1em auto; clear:both; float: right; width: 148px;' src="img/DurhamUniversityMasterLogo_RGB.png" alt="University of Durham"/></a><br />
       <div id="lastupdate"><p class="last_updated">Last updated: Oct 2020</p></div>
     </footer>
-    <!-- end of #content -->    
-  </div>
-</div>
+  </div><!-- end of #content -->    
+</div><!-- end of #wrapper -->
 </body>
 </html>
  

@@ -5,9 +5,9 @@ background {color: #fff;}
 body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 100%;
-	color: #392a31;  
+	color: #392a31;
   line-height: 1.48em;    /* 1.125 * 100 = 1.48 * 76% */
-  background-color: #392a31;  
+  background-color: #392a31;
 	font-weight:normal;
 	color: #333;
   margin: 0;
@@ -20,17 +20,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 h2 {
 	font-size: 1.25em;
 	font-weight: bold;
-  margin: 2em 0 1em;
 }
 
 h3 {
-	font-size: 1em; 
+	font-size: 1em;
 	font-weight: bold;
 }
 
@@ -45,7 +44,7 @@ td ul, td ol, td h3, td h4 {
 td p, td li {
 	font-size: 100%em;
 }
-p, ul, ol {margin-bottom:0.5em;}  
+p, ul, ol {margin-bottom:0.5em;}
 
 td h3 {
 	font-size: 1.2em; font-weight: bold;
@@ -55,11 +54,28 @@ td h3 {
 
 .footer img {float:right; }
 
+/* =STAFF
+-------------------------------------------------------------- */
+
+img.mugshot {
+  max-width: 100%;
+  border: solid 1px #2d2125;
+}
+
+.widgets {
+  float: right;
+  width: 24px;
+  text-align: center;
+  margin-right: -2px;
+  margin-top: 7px;
+}
+
+
 /* =LINKS
 -------------------------------------------------------------- */
 
 a[href]:active {text-decoration: none; }
-	
+
 a[id]:hover {text-decoration:none;}
 
 a img {border:none;}
@@ -84,7 +100,7 @@ a img {border:none;}
 	color:#678;
 	text-decoration:none;
 	background-color:#e3e3e3;
-	} 
+	}
 
 
 /* =LISTS
@@ -113,28 +129,6 @@ div.reference {
 }
 div.lowlight {
   opacity: 0.75;
-}
-
-.altmetric-embed {
-  float: right;
-  margin-right: -0.7em;
-  opacity: 0.20;
-  height: 4em;
-  padding-bottom: 2.6em;
-}
-.altmetric-embed:hover {
-  opacity: 0.90;
-}
-#content div.altmetric-embed a:hover {
-  background-color: transparent;
-}
-
-span.__dimensions_badge_embed__, 
-span.__dimensions_badge_embed__ a, 
-span.__dimensions_badge_embed__ a:hover{
-  opacity: 0.75;
-  float: right;
-  margin-right: -0.7em
 }
 
 ol {
@@ -172,7 +166,7 @@ sub {
 	top: 0.5em;
 }
 
-blockquote { 
+blockquote {
 	background: #fff;
 	padding: 0.5em 1em 0 1em;
 	font-size: 1em;
@@ -216,27 +210,10 @@ tt, code {
   box-shadow: 0 0 185px #201718;
 }
 
-h1.banner {
-  font-weight: bold;
-  padding: 18px 18px 18px 2em;
-  margin: 0 0 0 -2em;
-  height: 25px;
-  background-color: #a3b6cf;
-  border: 1px solid;
-  box-shadow: 0.5em 0.5em 1em -0.5em #a3b6cf, 0.5em -0.5em 1em -0.5em #a3b6cf;
-}
-
-#banner-image {
-  margin: 0 10%;
-  border: 3px double;
-  width: 250px;
-  max-width: 80%;
-}
-
 .field_photo {
-  width:50%; 
-  border: 1px black solid; 
-  float:right; 
+  width:50%;
+  border: 1px black solid;
+  float:right;
   margin: 0.5em 0 0.5em 0.5em;
 }
 
@@ -250,12 +227,17 @@ h1.banner {
   position: relative;
 }
 
-#column_left {
+.person {
+  clear: both;
+  width: 100%;
+}
+
+.left {
 	width: 62%;
 	float: left;
 }
 
-#column_right {
+.right {
 	width: 35%;
 	float: right;
 }
@@ -340,9 +322,9 @@ p.last_updated {font-size:small; color:#999999;}
 br.clear {clear:both;}
 
 /* Lists within lists shouldn't have a font-size greater than 1,
-     since they actually inherit the font-size of their parent, 
+     since they actually inherit the font-size of their parent,
      and so 1.4 x 1.4 is bigger! */
-p p,	 
+p p,
 ul ul,
 ul ul ul,
 ul ol,
