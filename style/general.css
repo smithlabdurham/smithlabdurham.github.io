@@ -239,6 +239,7 @@ tt, code {
 .right {
 	width: 35%;
 	float: right;
+	margin-bottom: 1em;
 }
 
 .clear {
