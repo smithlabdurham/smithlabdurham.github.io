@@ -36,7 +36,7 @@ $(document).ready(function() {
   $('#software_tab').click(function() {select_tab('software')});
 
   if (location.hash) {
-    select_tab(location.hash.replace(/#!?/, ""));
+    select_tab(location.hash.replace(/#!?/, "").toLowerCase());
   }
 
 });
