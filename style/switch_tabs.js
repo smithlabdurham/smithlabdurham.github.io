@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  $('#biography_content').css('display', 'none');
+  $('#team_content').css('display', 'none');
+  $('#masters_content').css('display', 'none');
   $('#phd_content').css('display', 'none');
-  $('#msc_content').css('display', 'none');
-  $('#opps_content').css('display', 'none');
+  $('#opportunities_content').css('display', 'none');
   $('#teaching_content').css('display', 'none');
   $('#software_content').css('display', 'none');
 
