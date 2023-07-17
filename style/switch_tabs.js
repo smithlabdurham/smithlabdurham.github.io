@@ -1,3 +1,5 @@
+"use strict";
+
 $(document).ready(function() {
   $("#team_content").css("display", "none");
   $("#masters_content").css("display", "none");
@@ -10,6 +12,15 @@ $(document).ready(function() {
     unselect_tabs();
     $("#" + id + "_content").css("display", "block");
     $("#" + id + "_tab").removeClass("other_tab");
+    let prefix = "";
+    switch(id) {
+      case "phd": prefix = "PhD Opportunities"; break;
+      case "masters": prefix = "Masters' by Research"; break;
+      case "team": prefix = "Group members"; break;
+      default: prefix =  id.charAt(0).toUpperCase() + id.slice(1);
+    }
+    document.title = prefix == "" ? "Smith Lab, Durham University" :
+    (prefix + " | Smith Lab, Durham University")
     location.hash = "#!" + id;
   }
 
